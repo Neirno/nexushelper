@@ -8,6 +8,8 @@ import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.multiplayer.PlayerControllerMP;
 import net.minecraft.client.multiplayer.WorldClient;
 import net.minecraft.client.settings.GameSettings;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentTranslation;
 
 public class Wrapper 
 {
@@ -47,5 +49,10 @@ public class Wrapper
     public void copy(String str) 
     {
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(new StringSelection(str), null);
+    }
+    
+    public void sendMessageToPlayer (String str)
+    {
+    	Wrapper.INSTANCE.player().sendMessage((ITextComponent)new TextComponentTranslation(str));
     }
 }

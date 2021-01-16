@@ -6,10 +6,11 @@ import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;	
 
 import com.holo.nexushelper.proxy.CommonProxy;
 import com.holo.nexushelper.reference.Reference;
+import com.holo.nexushelper.util.Connect;
 
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION,
@@ -35,5 +36,6 @@ public class Main {
     @EventHandler
     public void postInit(final FMLPostInitializationEvent event) {
         Main.proxy.postInit(event);
+        //Connect connect = new Connect();
     }
 }

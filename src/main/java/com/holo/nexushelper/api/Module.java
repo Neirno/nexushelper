@@ -1,6 +1,9 @@
 package com.holo.nexushelper.api;
 
 import com.holo.nexushelper.reference.ModuleCategory;
+
+import net.minecraftforge.client.event.ClientChatEvent;
+import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.client.event.MouseEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.client.event.RenderWorldLastEvent;
@@ -60,6 +63,12 @@ public abstract class Module {
     }
 
     public void onWorldRender(RenderWorldLastEvent event) {
+    }
+    
+    public void onPlayerSendChatMessage (ClientChatEvent event) {
+    }
+    
+    public void onNewMessage (ClientChatReceivedEvent event) {
     }
 
     public void onModuleEnabled() {

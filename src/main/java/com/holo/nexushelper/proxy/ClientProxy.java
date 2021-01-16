@@ -8,8 +8,6 @@ import net.minecraft.client.settings.KeyBinding;
 
 public class ClientProxy extends CommonProxy
 {
-    public static KeyBinding keyBindingsNC;
-    public static KeyBinding keyBindingsGui;
     
     @Override
     public void preInit(final FMLPreInitializationEvent event) {

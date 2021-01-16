@@ -1,4 +1,4 @@
-Args: "--in-jar", "C:\Users\Gleb\Desktop\mod\build\libs\ChatMod-1.0.0.jar", "--out-jar", "C:\Users\Gleb\Desktop\mod\build\reobfJar\output.jar", "--srg-in", "C:\Users\Gleb\Desktop\mod\build\createMcpToSrg\output.tsrg", "--live"
+Args: "--in-jar", "C:\Users\Gleb\Desktop\mod\build\libs\NexusHelper-0.0.1.jar", "--out-jar", "C:\Users\Gleb\Desktop\mod\build\reobfJar\output.jar", "--srg-in", "C:\Users\Gleb\Desktop\mod\build\createMcpToSrg\output.tsrg", "--live"
 Classpath: C:\Users\Gleb\.gradle\caches\forge_gradle\maven_downloader\net\md-5\SpecialSource\1.8.3\SpecialSource-1.8.3-shaded.jar
 Classpath: C:\Users\Gleb\Desktop\mod\libs\jsoup-1.13.1.jar
 Classpath: C:\Users\Gleb\Desktop\mod\libs\PlayerAPI_1.12.2_1.0.jar

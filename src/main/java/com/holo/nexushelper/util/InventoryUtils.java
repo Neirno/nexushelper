@@ -4,13 +4,13 @@ import net.minecraft.inventory.Container;
 
 public class InventoryUtils {
 	
-	public int startOfSlotsInInventor = 9;
+	public static int startOfSlotsInInventor = 9;
 	
-	public int endOfSlotInInventory = 44;
+	public static int endOfSlotInInventory = 44;
 	
-    public boolean isContainerEmpty(Container container) 
+    public static boolean isContainerEmpty(Container container) 
     {
-        int iSlotAmount = this.numberSlotsInventory(container);
+        int iSlotAmount = numberSlotsInventory(container);
         for (int i = 0; i < iSlotAmount; ++i) 
         {
             if (!container.getSlot(i).getHasStack()) 
@@ -24,7 +24,7 @@ public class InventoryUtils {
     
     // Number of slots in inventory = 46
     // Slots in the chest without crafting = 36
-    public int numberSlotsInventory(Container container)
+    public static int numberSlotsInventory(Container container)
     {
     	int slots = container.inventorySlots.size();
         switch (slots)
@@ -47,9 +47,9 @@ public class InventoryUtils {
         return slots;
     }
     
-    /*public int getEmptySlotInInventory(Container container)
+    public static int getEmptySlotInInventory(Container container)
     {
-    	int slotAmount = this.numberSlotsInventory(container);
+    	int slotAmount = numberSlotsInventory(container);
         for (int i = slotAmount; i < container.inventorySlots.size(); ++i) 
         {
             if (!container.getSlot(i).getHasStack()) 
@@ -58,5 +58,5 @@ public class InventoryUtils {
             }
         }
         return -1;
-    }*/
+    }
 }
