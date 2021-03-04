@@ -81,8 +81,15 @@ public class AuthEvent extends Module{
 			case ("antiafk"):
 				if (Reference.identified)
 				{
-					Wrapper.INSTANCE.sendMessageToPlayer("§2§lАнти АФК запущен.");
-					Reference.antiAFK = true;
+					if (!Reference.antiAFK) {
+						Wrapper.INSTANCE.sendMessageToPlayer("§2§lАнти АФК запущен.");
+						Reference.antiAFK = true;
+					}
+					else
+					{
+						Wrapper.INSTANCE.sendMessageToPlayer("§2§lАнти АФК выключен.");
+						Reference.antiAFK = false;
+					}
 				}
 				break;
 			case ("stop"):

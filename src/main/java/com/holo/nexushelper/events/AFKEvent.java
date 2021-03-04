@@ -35,7 +35,7 @@ public class AFKEvent<dirz> extends Module {
     @SubscribeEvent
     public void onTicks(TickEvent.PlayerTickEvent e) {
         {
-            if (Reference.identified && Reference.antiAFK && !isAntiAFK) {
+            if (Reference.identified && Reference.antiAFK ) {
                 isAntiAFK = true;
                 Wrapper.INSTANCE.player().sendChatMessage("/near");
                 new Timer().schedule(new TimerTask() {
@@ -46,7 +46,7 @@ public class AFKEvent<dirz> extends Module {
                 }, 50000 + (int) (Math.random() * 100000.0));
             }
         }
-        if (e.phase.equals(TickEvent.Phase.START))
+        if (e.phase.equals(TickEvent.Phase.START) && Reference.identified && Reference.antiAFK)
         {
             int x = 0;
             int y = 60;
