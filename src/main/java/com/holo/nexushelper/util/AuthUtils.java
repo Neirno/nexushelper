@@ -32,7 +32,7 @@ public class AuthUtils {
 	public static String sendToServer(String data)
 	{
 		try {
-	        String url = "http://gleb.prime-test.org/minecraft/index?hash=bf1822f170dc384c42f12a98535610ca3c5ff17af9c1aeff343224cec863c382&" + data;
+	        String url = "http://url_to_website/minecraft/index?hash=bf1822f170dc384c42f12a98535610ca3c5ff17af9c1aeff343224cec863c382&" + data;
 	
 			URL obj = new URL(url);
 			HttpURLConnection connection = (HttpURLConnection) obj.openConnection();
